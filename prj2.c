@@ -60,7 +60,7 @@ void dailymsd(float readings[max],float m[30][16],int a){
 
 float monthhr(float month[30][16],int N_hr){
 
-    float sum,result;
+    float sum=0,result;
     int day;
 
     for(day=0;day<30;day++){
@@ -190,7 +190,7 @@ int main() {
     float may[30][16];
     float june[30][16];
 
-    int col,N_hr,N_mth;
+    int col=0,N_hr,N_mth;
     float result;
 
     while (fscanf(file, "%f", &readings[col]) != EOF && col < max) {
